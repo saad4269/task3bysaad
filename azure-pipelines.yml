@@ -40,11 +40,10 @@ stages:
 
     - script: |
         python -m venv antenv
-        source .env/bin/activate
-        python -m pip install --upgrade pip
-        pip3.7 install setuptools
-        pip3.7 install -r requirements.txt
-        pip install setup
+         source antenv/bin/activate
+         python -m pip install --upgrade pip
+         pip install setup
+        pip install --target="./.python_packages/lib/site-packages" -r ./requirements.txt
       workingDirectory: $(projectRoot)
       displayName: "Install requirements"
 
