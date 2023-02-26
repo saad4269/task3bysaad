@@ -11,7 +11,7 @@ variables:
   azureServiceConnectionId: '93771511-8ce8-4275-92ac-bf6d35b4e7de'
 
   # Web app name
-  webAppName: 'FlaskApp'
+  webAppName: 'flaskwebapp'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
