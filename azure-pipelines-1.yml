@@ -80,6 +80,8 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Deploy Azure Web App : '
             inputs:
-              azureSubscription: $(azureServiceConnectionId)
-              appName: $(webAppName)
-              package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
+              azureSubscription: 'Azure subscription 1 (bee78d4f-49f3-4648-893a-e2ca59d0cb33)'
+              appType: 'webApp'
+              appName: 'dgapp1'
+              package: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
+              deploymentMethod: 'auto'
